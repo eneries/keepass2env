@@ -1,4 +1,4 @@
-# keepass-to-env-vars
+# keepass2env
 
 This action puts keepass entries into environment variables, 
 entries whose title ends with the "_BASE64" postfix are exported once with their original name and value and once as
@@ -23,7 +23,7 @@ concatenate nested groups with "/", the empty string as default selects all entr
 ## Example usage
 
 ```yaml
-uses: efficientIO/keepass-to-env-vars@v1
+uses: eneries/keepass2env@v1
 with:
   keepass-file-path: 'database.kdbx'
   keepass-master-password: 'secret'
